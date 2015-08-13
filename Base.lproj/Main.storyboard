@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MediaNaranja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWW-zb-lbN">
+                                <rect key="frame" x="36" y="219" width="528" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="-257605199.32423002">
+                                    <!--1992-11-02 11:00:00 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-1293886800">
+                                    <!--1960-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="439556400">
+                                    <!--2014-12-06 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="es"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿ES TU MEDIA NARANJA?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcC-Tv-BKK">
+                                <rect key="frame" x="196" y="30" width="208" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce tu fecha de nacimiento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLd-zz-KCp">
+                                <rect key="frame" x="185" y="185" width="230" height="19"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsy-z4-4bF">
+                                <rect key="frame" x="269" y="396" width="62" height="29"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="db7-gW-mwP" kind="presentation" identifier="Show Info VC" modalTransitionStyle="flipHorizontal" id="3Qf-q0-Ppp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69869636966046755" blue="0.40207808107444143" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RLd-zz-KCp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3Cv-xd-wks"/>
+                            <constraint firstAttribute="centerX" secondItem="KcC-Tv-BKK" secondAttribute="centerX" id="HoW-y0-3OJ"/>
+                            <constraint firstItem="WWW-zb-lbN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Kkf-Ce-I7a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RLd-zz-KCp" secondAttribute="trailing" constant="20" id="PqE-xr-Mbj"/>
+                            <constraint firstItem="KcC-Tv-BKK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="QY0-6v-3cB"/>
+                            <constraint firstAttribute="centerX" secondItem="RLd-zz-KCp" secondAttribute="centerX" id="TTY-dN-SSd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WWW-zb-lbN" secondAttribute="trailing" constant="20" id="UfW-Fb-0fL"/>
+                            <constraint firstItem="WWW-zb-lbN" firstAttribute="top" secondItem="RLd-zz-KCp" secondAttribute="bottom" constant="15" id="Vmt-lK-a6x"/>
+                            <constraint firstAttribute="centerY" secondItem="WWW-zb-lbN" secondAttribute="centerY" id="XtI-re-qqA"/>
+                            <constraint firstItem="vsy-z4-4bF" firstAttribute="top" secondItem="WWW-zb-lbN" secondAttribute="bottom" constant="15" id="jci-xt-qgO"/>
+                            <constraint firstAttribute="centerX" secondItem="vsy-z4-4bF" secondAttribute="centerX" id="xzF-Zz-DzI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Cv-xd-wks"/>
+                                <exclude reference="PqE-xr-Mbj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="KcC-Tv-BKK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3Cv-xd-wks"/>
+                                <include reference="PqE-xr-Mbj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="nacimiento" destination="WWW-zb-lbN" id="HXm-fg-GoM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="418"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="Nj1-hg-qFA">
+            <objects>
+                <viewController id="db7-gW-mwP" customClass="ViewController2" customModule="MediaNaranja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1km-dQ-ROi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccP-hG-Y7B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6yP-Zi-PX1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce la fecha en que conociste al amor de tu vida" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R2-4S-kmG">
+                                <rect key="frame" x="36" y="185" width="528" height="19"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-Ct-2u0">
+                                <rect key="frame" x="36" y="219" width="528" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="436794529.67576998">
+                                    <!--2014-11-04 11:48:49 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="439556400">
+                                    <!--2014-12-06 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="es"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlD-ZO-9ar">
+                                <rect key="frame" x="269" y="396" width="62" height="29"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ro9-JW-VT4" kind="show" identifier="Show Info VC" id="dbK-hy-baf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69869636970000004" blue="0.40207808109999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="X0y-Ct-2u0" firstAttribute="leading" secondItem="6yP-Zi-PX1" secondAttribute="leadingMargin" constant="20" id="3Ou-V8-O8C"/>
+                            <constraint firstItem="3R2-4S-kmG" firstAttribute="leading" secondItem="6yP-Zi-PX1" secondAttribute="leadingMargin" constant="20" id="47o-LO-Yfa"/>
+                            <constraint firstItem="XlD-ZO-9ar" firstAttribute="top" secondItem="X0y-Ct-2u0" secondAttribute="bottom" constant="15" id="7Kf-OR-anK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X0y-Ct-2u0" secondAttribute="trailing" constant="20" id="8l4-Uc-5AS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3R2-4S-kmG" secondAttribute="trailing" constant="20" id="C4s-sv-Ngj"/>
+                            <constraint firstAttribute="centerX" secondItem="XlD-ZO-9ar" secondAttribute="centerX" id="Diq-vb-Yui"/>
+                            <constraint firstItem="X0y-Ct-2u0" firstAttribute="top" secondItem="3R2-4S-kmG" secondAttribute="bottom" constant="15" id="P9M-3z-nLN"/>
+                            <constraint firstAttribute="centerY" secondItem="X0y-Ct-2u0" secondAttribute="centerY" id="Pwm-jp-agg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X0y-Ct-2u0" secondAttribute="trailing" constant="20" id="f5y-be-8cG"/>
+                            <constraint firstAttribute="centerX" secondItem="3R2-4S-kmG" secondAttribute="centerX" id="q1O-gx-LAB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enamorar" destination="X0y-Ct-2u0" id="UIx-7n-wFL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVk-qz-l3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="418"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="J9o-hm-m2Q">
+            <objects>
+                <viewController id="ro9-JW-VT4" customClass="ViewController3" customModule="MediaNaranja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wfv-O1-STq"/>
+                        <viewControllerLayoutGuide type="bottom" id="XpV-4q-HHh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GkB-fd-aXr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ts2-7C-kwN">
+                                <rect key="frame" x="36" y="219" width="528" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="436794529.67576998">
+                                    <!--2014-11-04 11:48:49 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="3155626800">
+                                    <!--2100-12-31 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="es"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce la fecha de tu muerte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4D-e7-h5t">
+                                <rect key="frame" x="36" y="185" width="528" height="19"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-td-tOz">
+                                <rect key="frame" x="269" y="396" width="62" height="29"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iaL-uZ-yIW" kind="show" identifier="Show Info VC" id="aPN-yS-BJK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69869636970000004" blue="0.40207808109999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ts2-7C-kwN" firstAttribute="leading" secondItem="GkB-fd-aXr" secondAttribute="leadingMargin" constant="20" id="38u-cp-CsL"/>
+                            <constraint firstAttribute="centerX" secondItem="YSd-td-tOz" secondAttribute="centerX" id="3Yt-JU-Nl6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H4D-e7-h5t" secondAttribute="trailing" constant="20" id="6K3-mw-WAT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ts2-7C-kwN" secondAttribute="trailing" constant="20" id="Dyt-60-5y6"/>
+                            <constraint firstItem="YSd-td-tOz" firstAttribute="top" secondItem="Ts2-7C-kwN" secondAttribute="bottom" constant="15" id="UaR-Og-5YV"/>
+                            <constraint firstAttribute="centerY" secondItem="Ts2-7C-kwN" secondAttribute="centerY" id="V1P-O5-DG6"/>
+                            <constraint firstAttribute="centerX" secondItem="H4D-e7-h5t" secondAttribute="centerX" id="iFr-uo-2Jy"/>
+                            <constraint firstItem="Ts2-7C-kwN" firstAttribute="top" secondItem="H4D-e7-h5t" secondAttribute="bottom" constant="15" id="ris-4H-3HJ"/>
+                            <constraint firstItem="H4D-e7-h5t" firstAttribute="leading" secondItem="GkB-fd-aXr" secondAttribute="leadingMargin" constant="20" id="vlc-L1-tA9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="muerte" destination="Ts2-7C-kwN" id="bHs-Z1-Jhb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fj-nG-a8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="418"/>
+        </scene>
+        <!--View Controller Resultado-->
+        <scene sceneID="Rcy-4d-Y4t">
+            <objects>
+                <viewController id="iaL-uZ-yIW" customClass="ViewControllerResultado" customModule="MediaNaranja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S4g-XY-luo"/>
+                        <viewControllerLayoutGuide type="bottom" id="8xE-dV-kDD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Kh-6T-HM0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js2-5i-QNo">
+                                <rect key="frame" x="245" y="290" width="111" height="48"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORCENTAJE DE NARANJA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-69-gxh">
+                                <rect key="frame" x="210" y="251" width="180" height="19"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1T-Un-wa9">
+                                <rect key="frame" x="269" y="541" width="62" height="29"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JdB-Fm-0nI" kind="unwind" unwindAction="goBackHome:" id="Y9x-Ra-kOh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69869636970000004" blue="0.40207808109999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8xE-dV-kDD" firstAttribute="top" secondItem="K1T-Un-wa9" secondAttribute="bottom" constant="30" id="0Tx-I8-mxj"/>
+                            <constraint firstItem="Js2-5i-QNo" firstAttribute="top" secondItem="v0k-69-gxh" secondAttribute="bottom" constant="20" id="Bmh-dB-Iog"/>
+                            <constraint firstAttribute="centerX" secondItem="K1T-Un-wa9" secondAttribute="centerX" id="HVp-Lg-ndH"/>
+                            <constraint firstAttribute="centerY" secondItem="v0k-69-gxh" secondAttribute="centerY" constant="40" id="bP7-G5-Fzh"/>
+                            <constraint firstAttribute="centerX" secondItem="Js2-5i-QNo" secondAttribute="centerX" id="tEg-2a-IV4"/>
+                            <constraint firstAttribute="centerX" secondItem="v0k-69-gxh" secondAttribute="centerX" id="waM-za-ftk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="porcentaje" destination="Js2-5i-QNo" id="AZY-O5-AhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7SW-I3-tD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JdB-Fm-0nI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2486" y="418"/>
+        </scene>
+    </scenes>
+</document>
